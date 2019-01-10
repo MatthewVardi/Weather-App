@@ -1,6 +1,6 @@
 body {
     background: url(clouds.jpeg) no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 
 #response {
