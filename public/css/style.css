@@ -1,6 +1,6 @@
 body {
-    background: url(clouds.jpeg) no-repeat;
-    background-size: auto;
+    background: url(clouds.jpeg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 #response {
@@ -9,9 +9,6 @@ body {
     font-size: 3em;
 }
 
-.jumbotron {
-    background: none;
-}
 
 #title {
     font-weight:800;
