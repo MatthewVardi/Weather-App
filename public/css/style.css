@@ -1,5 +1,6 @@
 body {
-    background: url(clouds.jpeg) no-repeat center center fixed;
+    /* background: url(clouds.jpeg) no-repeat center center fixed; */
+    background-color:  #00303F;
     background-size: cover;
 }
 
@@ -13,4 +14,5 @@ body {
 #title {
     font-weight:800;
     font-size: 50px;
+    color: white;
 }

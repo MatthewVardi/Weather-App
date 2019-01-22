@@ -15,6 +15,7 @@ app.get('/', function (req, res) {
 app.post('/', function (req, res) {
   var city = req.body.city;
   var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+  var time = new Date().toLocaleTimeString();
   request(url, function(err,response, body) {
     if (err) {
       res.render("index", {weather: null, error: "Please try again"})
@@ -24,7 +25,7 @@ app.post('/', function (req, res) {
       if (weather.main == undefined) {
         res.render("index", {weather: null, error: "Please try again"})
       } else {
-        var weatherText = `It's ${weather.main.temp} degrees in ${weather.name}`
+        var weatherText = `The time is ${time} and it's ${weather.main.temp} degrees in ${weather.name}`
         res.render("index", {weather:weatherText, error: null})
       }
     }
